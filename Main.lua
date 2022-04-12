@@ -1,5 +1,6 @@
 
 
+getgenv().ProxyProtocol;
 
 --[[
     PROXY PROTOCOLS
@@ -29,7 +30,6 @@ local allResponse = syn.request({
 })
 
 
-local protocol = getgenv().ProxyProtocol
 
 
 if protocol == "http" then
@@ -48,4 +48,3 @@ if protocol == "all" then
     writefile("all.txt", allResponse.Body)
 
 end
-
