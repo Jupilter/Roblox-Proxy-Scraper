@@ -10,7 +10,6 @@
 ]]  
 
 
-
 local HttpResponse = syn.request({
     Url = "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all",
     Method = "GET"
