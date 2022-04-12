@@ -32,7 +32,7 @@ local allResponse = syn.request({
 
 
 if getgenv().ProxyProtocol == "http" then
-    writefile("HTTP.txt", Response.Body)
+    writefile("HTTP.txt", HttpResponse.Body)
 
 end
 if getgenv().ProxyProtocol == "socks4" then
