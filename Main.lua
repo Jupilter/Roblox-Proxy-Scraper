@@ -1,6 +1,5 @@
 
 
-getgenv().ProxyProtocol;
 
 --[[
     PROXY PROTOCOLS
