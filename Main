@@ -29,23 +29,21 @@ local allResponse = syn.request({
 })
 
 
-local protocol = getgenv().ProxyProtocol
 
 
-if protocol == "http" then
+if getgenv().ProxyProtocol == "http" then
     writefile("HTTP.txt", Response.Body)
 
 end
-if protocol == "socks4" then
+if getgenv().ProxyProtocol == "socks4" then
     writefile("socks4.txt", socks4Response.Body)
 
 end
-if protocol == "socks5" then
+if getgenv().ProxyProtocol == "socks5" then
     writefile("socks5.txt", socks5Response.Body)
 
 end
-if protocol == "all" then
+if getgenv().ProxyProtocol == "all" then
     writefile("all.txt", allResponse.Body)
 
 end
-
